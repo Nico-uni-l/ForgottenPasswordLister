@@ -22,6 +22,7 @@ This script calculates all possible passwords and writes them to a file, easy to
 #### to-do: 
 * implement function to give pre-order of known letters and reduce permutation count
 * optimize calculation time
+* for now it's simple "hardcore brutforcer" --> add statistical frequencies of letters (in passwords) and by this ignore some letters 
 
 
 
