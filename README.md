@@ -9,7 +9,7 @@ This script calculates all possible passwords and writes them to a file, easy to
 
 ### Usage:
 
-`git clone https://github.com/Nicolas-le/ForgottenPasswordLister.git`
+`git clone https://github.com/Nicolas-le/forgottenPasswordLister.git`
 
 `python3 lister.py <known-letters> <password-length> <output-filename>`
 
