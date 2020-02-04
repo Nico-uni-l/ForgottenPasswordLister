@@ -11,6 +11,8 @@ This script calculates all possible passwords and writes them to a file, easy to
 
 `git clone https://github.com/Nicolas-le/forgottenPasswordLister.git`
 
+`cd forgottenPasswordLister`
+
 `python3 lister.py <known-letters> <password-length> <output-filename>`
 
 ### Example: 
