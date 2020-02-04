@@ -36,11 +36,10 @@ def createAlphabet(knownLetters):
                         'V', 'W', 'X', 'Y', 'Z', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.',
                         '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~', ' ']
 
-    lettersPW = []
 
     print("These are the characters used for the combination.")
     print(printableLetters)
-    print("Are there some characters which are definitely not a part of the password? [y/n]\n")
+    print("Are there some characters which are definitely not a part of the password? [y/n]")
 
     if userInput():
         print("Which ones?")
@@ -58,16 +57,17 @@ def createAlphabet(knownLetters):
     print("For example: known letters: abc | password: aabc [y/n]")
 
     if userInput():
-
-        return lettersPW
+        return printableLetters
     else:
         for char in printableLetters:
-            if char not in knownLetters:
-                lettersPW.append(char)
+            if knownLetters.__contains__(char):
+                printableLetters.remove(char)
 
-    return lettersPW
+    return printableLetters
 
 def preCalc(knownLetters,alphabet,pwLength):
+
+
     combLen = len(list(combinations_with_replacement(alphabet, pwLength-len(knownLetters))))
     permLen = math.factorial(pwLength)
 
