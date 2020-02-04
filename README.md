@@ -13,7 +13,7 @@ This script calculates all possible passwords and writes them to a file, easy to
 
 `python3 lister.py <known-letters> <password-length> <output-filename>`
 
-### Expample: 
+### Example: 
 
 `python3 lister.py ak1 5 pwList.txt`
 
