@@ -20,7 +20,6 @@ This script calculates all possible passwords and writes them to a file, easy to
 `python3 lister.py ak1 5 pwList.txt`
 
 #### to-do: 
-* comment code
 * implement function to give pre-order of known letters and reduce permutation count
 * optimize calculation time
 
